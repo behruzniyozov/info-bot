@@ -1,0 +1,13 @@
+app = "info-bot-abduvali"
+primary_region = "ams"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  OWNER_ID = "6783170833"
+  CHANNEL_USERNAME = "-1003303551248"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
