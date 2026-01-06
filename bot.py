@@ -118,7 +118,8 @@ WELCOME_MESSAGE = (
 # Info messages in different languages
 INFO_MESSAGES = {
     "uz": (
-        "👤 Egasi: Qo'zimurodov Abduvali Utkirovich\n\n"
+        "👤 Egasi: Qo'zimurodov Abduvali Utkirovich\n"
+        "🛠 Yaratuvchi: @Behruz_Niyozov\n\n"
         "📊 Trading va ingliz tili bo'yicha bilimga ega shaxs\n\n"
         "📢 Kanalim: t.me/qozimurodovvv\n\n"
         "━━━━━━━━━━━━━━━━━━━━\n\n"
@@ -128,7 +129,8 @@ INFO_MESSAGES = {
         "/currency - Valyuta konvertori"
     ),
     "ru": (
-        "👤 Владелец: Козимуродов Абдували Уткирович\n\n"
+        "👤 Владелец: Козимуродов Абдували Уткирович\n"
+        "🛠 Создатель: @Behruz_Niyozov\n\n"
         "📊 Специалист по трейдингу и английскому языку\n\n"
         "📢 Мой канал: t.me/qozimurodovvv\n\n"
         "━━━━━━━━━━━━━━━━━━━━\n\n"
@@ -138,7 +140,8 @@ INFO_MESSAGES = {
         "/currency - Конвертер валют"
     ),
     "en": (
-        "👤 Owner: Qozimurodov Abduvali Utkirovich\n\n"
+        "👤 Owner: Qozimurodov Abduvali Utkirovich\n"
+        "🛠 Creator: @Behruz_Niyozov\n\n"
         "📊 Knowledgeable in Trading and English language\n\n"
         "📢 My channel: t.me/qozimurodovvv\n\n"
         "━━━━━━━━━━━━━━━━━━━━\n\n"
