@@ -4,17 +4,25 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DB_CONFIG = {
-    "host": os.getenv("DB_HOST"),
-    "port": os.getenv("DB_PORT"),
-    "dbname": os.getenv("DB_NAME"),
-    "user": os.getenv("DB_USER"),
-    "password": os.getenv("DB_PASSWORD")
-}
+# Support Railway's DATABASE_URL or individual variables
+DATABASE_URL = os.getenv("DATABASE_URL")
 
+if DATABASE_URL:
+    # Railway provides DATABASE_URL
+    def get_db_connection():
+        return psycopg2.connect(DATABASE_URL)
+else:
+    # Local development with individual variables
+    DB_CONFIG = {
+        "host": os.getenv("DB_HOST"),
+        "port": os.getenv("DB_PORT"),
+        "dbname": os.getenv("DB_NAME"),
+        "user": os.getenv("DB_USER"),
+        "password": os.getenv("DB_PASSWORD")
+    }
 
-def get_db_connection():
-    return psycopg2.connect(**DB_CONFIG)
+    def get_db_connection():
+        return psycopg2.connect(**DB_CONFIG)
 
 
 def init_db():
